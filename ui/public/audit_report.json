@@ -4,8 +4,8 @@
     "total_failed": 48,
     "total_successful": 12,
     "total_at_risk_inr": 275852,
-    "total_recovered_inr": 39193,
-    "recovery_rate_percent": 14.21
+    "total_recovered_inr": 49991,
+    "recovery_rate_percent": 18.12
   },
   "guardrails": {
     "max_retry_cap": 3,
@@ -20,13 +20,13 @@
         "outcome": "skipped",
         "recovered": 0,
         "note": "GUARDRAIL TRIGGERED: Already attempted 3 times. Max is 3. No further retries to prevent customer spam.",
-        "timestamp": "2026-09-04T12:43:52.133907Z"
+        "timestamp": "2026-09-04T20:12:09.229254Z"
       }
     ]
   },
   "actions": {
     "auto_retries_attempted": 11,
-    "auto_retries_succeeded": 7,
+    "auto_retries_succeeded": 9,
     "notifications_sent": 24,
     "breakdown": {
       "AUTO_RETRY": {
@@ -74,7 +74,7 @@
       "outcome": "recovered",
       "recovered": 4999,
       "note": "Retry attempt #1. Payment succeeded.",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN002",
@@ -84,7 +84,7 @@
       "outcome": "awaiting_user",
       "recovered": 0,
       "note": "WhatsApp sent to +919876543202: \"Hi Priya, your payment of \u20b91299 failed. Click here to update your payment: https://pay.example.com/fix/TXN002\"",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN003",
@@ -94,7 +94,7 @@
       "outcome": "awaiting_user",
       "recovered": 0,
       "note": "WhatsApp sent to +919876543203: \"Hi Rohan, your payment of \u20b99999 failed. Click here to update your payment: https://pay.example.com/fix/TXN003\"",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN004",
@@ -104,7 +104,7 @@
       "outcome": "skipped",
       "recovered": 0,
       "note": "TERMINAL: Transaction flagged by fraud detection system. Retrying risks further security flags. Flagged for manual review.",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN006",
@@ -114,7 +114,7 @@
       "outcome": "recovered",
       "recovered": 7499,
       "note": "Retry attempt #2. Payment succeeded.",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN007",
@@ -124,7 +124,7 @@
       "outcome": "awaiting_user",
       "recovered": 0,
       "note": "WhatsApp sent to +919876543207: \"Hi Arjun, your payment of \u20b93299 failed. Click here to update your payment: https://pay.example.com/fix/TXN007\"",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN008",
@@ -134,7 +134,7 @@
       "outcome": "awaiting_user",
       "recovered": 0,
       "note": "WhatsApp sent to +919876543208: \"Hi Meera, your payment of \u20b914999 failed. Click here to update your payment: https://pay.example.com/fix/TXN008\"",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN009",
@@ -144,17 +144,17 @@
       "outcome": "skipped",
       "recovered": 0,
       "note": "TERMINAL: Transaction flagged by fraud detection system. Retrying risks further security flags. Flagged for manual review.",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN011",
       "customer": "Rahul Sharma",
       "amount": 2999,
       "action_taken": "AUTO_RETRY",
-      "outcome": "recovered",
-      "recovered": 2999,
-      "note": "Retry attempt #3. Payment succeeded.",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "outcome": "retry_failed",
+      "recovered": 0,
+      "note": "Retry attempt #3. Payment still failing, will retry later.",
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN012",
@@ -164,7 +164,7 @@
       "outcome": "awaiting_user",
       "recovered": 0,
       "note": "WhatsApp sent to +919876543212: \"Hi Pooja, your payment of \u20b91999 failed. Click here to update your payment: https://pay.example.com/fix/TXN012\"",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN013",
@@ -174,7 +174,7 @@
       "outcome": "awaiting_user",
       "recovered": 0,
       "note": "WhatsApp sent to +919876543213: \"Hi Nikhil, your payment of \u20b96999 failed. Click here to update your payment: https://pay.example.com/fix/TXN013\"",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN014",
@@ -184,7 +184,7 @@
       "outcome": "skipped",
       "recovered": 0,
       "note": "TERMINAL: Transaction flagged by fraud detection system. Retrying risks further security flags. Flagged for manual review.",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN016",
@@ -194,7 +194,7 @@
       "outcome": "recovered",
       "recovered": 5499,
       "note": "Retry attempt #1. Payment succeeded.",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN017",
@@ -204,7 +204,7 @@
       "outcome": "awaiting_user",
       "recovered": 0,
       "note": "WhatsApp sent to +919876543217: \"Hi Tara, your payment of \u20b92199 failed. Click here to update your payment: https://pay.example.com/fix/TXN017\"",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN018",
@@ -214,7 +214,7 @@
       "outcome": "awaiting_user",
       "recovered": 0,
       "note": "WhatsApp sent to +919876543218: \"Hi Aditya, your payment of \u20b911999 failed. Click here to update your payment: https://pay.example.com/fix/TXN018\"",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN019",
@@ -224,17 +224,17 @@
       "outcome": "skipped",
       "recovered": 0,
       "note": "TERMINAL: Transaction flagged by fraud detection system. Retrying risks further security flags. Flagged for manual review.",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN021",
       "customer": "Nisha Choudhary",
       "amount": 8999,
       "action_taken": "AUTO_RETRY",
-      "outcome": "retry_failed",
-      "recovered": 0,
-      "note": "Retry attempt #2. Payment still failing, will retry later.",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "outcome": "recovered",
+      "recovered": 8999,
+      "note": "Retry attempt #2. Payment succeeded.",
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN022",
@@ -244,7 +244,7 @@
       "outcome": "awaiting_user",
       "recovered": 0,
       "note": "WhatsApp sent to +919876543222: \"Hi Manish, your payment of \u20b93499 failed. Click here to update your payment: https://pay.example.com/fix/TXN022\"",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN023",
@@ -254,7 +254,7 @@
       "outcome": "awaiting_user",
       "recovered": 0,
       "note": "WhatsApp sent to +919876543223: \"Hi Simran, your payment of \u20b95999 failed. Click here to update your payment: https://pay.example.com/fix/TXN023\"",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN024",
@@ -264,17 +264,17 @@
       "outcome": "skipped",
       "recovered": 0,
       "note": "TERMINAL: Transaction flagged by fraud detection system. Retrying risks further security flags. Flagged for manual review.",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN026",
       "customer": "Rohit Saxena",
       "amount": 6499,
       "action_taken": "AUTO_RETRY",
-      "outcome": "retry_failed",
-      "recovered": 0,
-      "note": "Retry attempt #1. Payment still failing, will retry later.",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "outcome": "recovered",
+      "recovered": 6499,
+      "note": "Retry attempt #1. Payment succeeded.",
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN027",
@@ -284,7 +284,7 @@
       "outcome": "awaiting_user",
       "recovered": 0,
       "note": "WhatsApp sent to +919876543227: \"Hi Anjali, your payment of \u20b9999 failed. Click here to update your payment: https://pay.example.com/fix/TXN027\"",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN028",
@@ -294,7 +294,7 @@
       "outcome": "awaiting_user",
       "recovered": 0,
       "note": "WhatsApp sent to +919876543228: \"Hi Varun, your payment of \u20b919999 failed. Click here to update your payment: https://pay.example.com/fix/TXN028\"",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN029",
@@ -304,17 +304,17 @@
       "outcome": "skipped",
       "recovered": 0,
       "note": "TERMINAL: Transaction flagged by fraud detection system. Retrying risks further security flags. Flagged for manual review.",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN031",
       "customer": "Lavanya Suresh",
       "amount": 7999,
       "action_taken": "AUTO_RETRY",
-      "outcome": "recovered",
-      "recovered": 7999,
-      "note": "Retry attempt #3. Payment succeeded.",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "outcome": "retry_failed",
+      "recovered": 0,
+      "note": "Retry attempt #3. Payment still failing, will retry later.",
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN032",
@@ -324,7 +324,7 @@
       "outcome": "awaiting_user",
       "recovered": 0,
       "note": "WhatsApp sent to +919876543232: \"Hi Gaurav, your payment of \u20b92299 failed. Click here to update your payment: https://pay.example.com/fix/TXN032\"",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN033",
@@ -334,7 +334,7 @@
       "outcome": "awaiting_user",
       "recovered": 0,
       "note": "WhatsApp sent to +919876543233: \"Hi Swati, your payment of \u20b98499 failed. Click here to update your payment: https://pay.example.com/fix/TXN033\"",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN034",
@@ -344,17 +344,17 @@
       "outcome": "skipped",
       "recovered": 0,
       "note": "TERMINAL: Transaction flagged by fraud detection system. Retrying risks further security flags. Flagged for manual review.",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN036",
       "customer": "Suresh Babu",
       "amount": 3699,
       "action_taken": "AUTO_RETRY",
-      "outcome": "retry_failed",
-      "recovered": 0,
-      "note": "Retry attempt #1. Payment still failing, will retry later.",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "outcome": "recovered",
+      "recovered": 3699,
+      "note": "Retry attempt #1. Payment succeeded.",
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN037",
@@ -364,7 +364,7 @@
       "outcome": "awaiting_user",
       "recovered": 0,
       "note": "WhatsApp sent to +919876543237: \"Hi Rekha, your payment of \u20b94799 failed. Click here to update your payment: https://pay.example.com/fix/TXN037\"",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN038",
@@ -374,7 +374,7 @@
       "outcome": "awaiting_user",
       "recovered": 0,
       "note": "WhatsApp sent to +919876543238: \"Hi Amit, your payment of \u20b912999 failed. Click here to update your payment: https://pay.example.com/fix/TXN038\"",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN039",
@@ -384,7 +384,7 @@
       "outcome": "skipped",
       "recovered": 0,
       "note": "TERMINAL: Transaction flagged by fraud detection system. Retrying risks further security flags. Flagged for manual review.",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN041",
@@ -394,7 +394,7 @@
       "outcome": "recovered",
       "recovered": 5799,
       "note": "Retry attempt #2. Payment succeeded.",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN042",
@@ -404,7 +404,7 @@
       "outcome": "awaiting_user",
       "recovered": 0,
       "note": "WhatsApp sent to +919876543242: \"Hi Manoj, your payment of \u20b91699 failed. Click here to update your payment: https://pay.example.com/fix/TXN042\"",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN043",
@@ -414,7 +414,7 @@
       "outcome": "awaiting_user",
       "recovered": 0,
       "note": "WhatsApp sent to +919876543243: \"Hi Chitra, your payment of \u20b99499 failed. Click here to update your payment: https://pay.example.com/fix/TXN043\"",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN044",
@@ -424,7 +424,7 @@
       "outcome": "skipped",
       "recovered": 0,
       "note": "TERMINAL: Transaction flagged by fraud detection system. Retrying risks further security flags. Flagged for manual review.",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN046",
@@ -434,7 +434,7 @@
       "outcome": "recovered",
       "recovered": 4399,
       "note": "Retry attempt #1. Payment succeeded.",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN047",
@@ -444,7 +444,7 @@
       "outcome": "awaiting_user",
       "recovered": 0,
       "note": "WhatsApp sent to +919876543247: \"Hi Usha, your payment of \u20b93099 failed. Click here to update your payment: https://pay.example.com/fix/TXN047\"",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN048",
@@ -454,7 +454,7 @@
       "outcome": "awaiting_user",
       "recovered": 0,
       "note": "WhatsApp sent to +919876543248: \"Hi Tarun, your payment of \u20b916999 failed. Click here to update your payment: https://pay.example.com/fix/TXN048\"",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN049",
@@ -464,7 +464,7 @@
       "outcome": "skipped",
       "recovered": 0,
       "note": "TERMINAL: Transaction flagged by fraud detection system. Retrying risks further security flags. Flagged for manual review.",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN051",
@@ -474,7 +474,7 @@
       "outcome": "skipped",
       "recovered": 0,
       "note": "GUARDRAIL TRIGGERED: Already attempted 3 times. Max is 3. No further retries to prevent customer spam.",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN052",
@@ -484,7 +484,7 @@
       "outcome": "awaiting_user",
       "recovered": 0,
       "note": "WhatsApp sent to +919876543252: \"Hi Zara, your payment of \u20b91899 failed. Click here to update your payment: https://pay.example.com/fix/TXN052\"",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN053",
@@ -494,7 +494,7 @@
       "outcome": "awaiting_user",
       "recovered": 0,
       "note": "WhatsApp sent to +919876543253: \"Hi Aryan, your payment of \u20b97499 failed. Click here to update your payment: https://pay.example.com/fix/TXN053\"",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN054",
@@ -504,17 +504,17 @@
       "outcome": "skipped",
       "recovered": 0,
       "note": "TERMINAL: Transaction flagged by fraud detection system. Retrying risks further security flags. Flagged for manual review.",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN056",
       "customer": "Mira Bose",
       "amount": 2599,
       "action_taken": "AUTO_RETRY",
-      "outcome": "retry_failed",
-      "recovered": 0,
-      "note": "Retry attempt #1. Payment still failing, will retry later.",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "outcome": "recovered",
+      "recovered": 2599,
+      "note": "Retry attempt #1. Payment succeeded.",
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN057",
@@ -524,7 +524,7 @@
       "outcome": "awaiting_user",
       "recovered": 0,
       "note": "WhatsApp sent to +919876543257: \"Hi Nitin, your payment of \u20b93899 failed. Click here to update your payment: https://pay.example.com/fix/TXN057\"",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN058",
@@ -534,7 +534,7 @@
       "outcome": "awaiting_user",
       "recovered": 0,
       "note": "WhatsApp sent to +919876543258: \"Hi Sonal, your payment of \u20b910999 failed. Click here to update your payment: https://pay.example.com/fix/TXN058\"",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     },
     {
       "txn_id": "TXN059",
@@ -544,7 +544,7 @@
       "outcome": "skipped",
       "recovered": 0,
       "note": "TERMINAL: Transaction flagged by fraud detection system. Retrying risks further security flags. Flagged for manual review.",
-      "timestamp": "2026-09-04T12:43:52.133907Z"
+      "timestamp": "2026-09-04T20:12:09.229254Z"
     }
   ]
 }
